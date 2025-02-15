@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const appLinksRouter = require('./routes/appLinks'); // Import the routes
 
 const app = express();
-const port = 5000; // You can change the port if needed
+const PORT = process.env.PORT || 5000; // You can change the port if needed
 
 const cors = require('cors');
 app.use(cors());
@@ -37,4 +37,7 @@ mongoose.connection.on('error', (err) => {
 
 mongoose.connection.on('disconnected', () => {
   console.log("MongoDB disconnected");
+});
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
 });
