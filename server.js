@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const appLinksRouter = require('./routes/appLinks'); // Import the routes
 
 const app = express();
-const PORT = process.env.PORT || 5000; // You can change the port if needed
+const Port = process.env.PORT || 5000; // You can change the port if needed
 
 const cors = require('cors');
 app.use(cors());
