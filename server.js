@@ -13,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json()); // To parse JSON data
 
 // Connect to MongoDB 
-mongoose.connect("mongodb+srv://rankawat613:Jz44QNNG4nM4PE3o@my-app-cluster.vc3qr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority&appName=my-app-cluster")
+mongoose.connect("mongodb+srv://rankawat613:Jz44QNNG4nM4PE3o@my-app-cluster.vc3qr.mongodb.net/test?retryWrites=true&w=majority&appName=my-app-cluster")
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log("Error connecting to MongoDB: ", err));
 
